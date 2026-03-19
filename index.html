@@ -1,0 +1,113 @@
+
+<!--
+    
+Creado por: Cristian M. Veliz Cano
+Nombre del Proyecto: Locker-Anime (Ejemplo)
+Gituhub: https://github.com/Speedtige
+📧 Email: cristianvel2015mvc@gmail.com
+
+===========================================================
+Locker-Anime es un proyecto demostrativo diseñado con fines educativos, cuyo objetivo es mostrar de forma práctica cómo estructurar una plataforma web de contenido multimedia utilizando tecnologías base como HTML, CSS y JavaScript.
+
+Este ejemplo simula un contenedor de anime donde se integran múltiples fuentes de reproducción, como Google Drive, MEGA y Cloudinary, permitiendo comprender cómo trabajar con distintos servicios de almacenamiento.
+
+El proyecto está pensado como una guía para estudiantes y desarrolladores en formación, mostrando conceptos clave como:
+
+Organización de contenido dinámico mediante JavaScript
+Uso de interfaces por pestañas (Tabs)
+Integración de reproductores de video embebidos
+Manejo de eventos e interacción con el usuario
+Adaptabilidad del código para otros tipos de contenido
+
+Además, sirve como base escalable para proyectos más complejos, donde se puede implementar autenticación, bases de datos, servidores reales y sistemas de gestión de contenido.
+
+Locker-Anime no es solo un visor de anime, sino una plantilla de aprendizaje orientada a enseñar cómo construir plataformas modernas de distribución de contenido desde cero.
+
+Your site is live at https://speedtige.github.io/Ejemplo-Locker-Web-Anime/
+===========================================================
+-->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Locker-Anime</title>
+<link rel="icon" type="favicon.ico" href="favicon.ico">
+<link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<header class="header">
+    <h1 class="logo">Locker-Anime</h1>
+
+    <nav class="nav">
+        <button class="tab active" data-tab="anime1">Claymore</button>
+        <button class="tab" data-tab="anime2">Demon Spirit</button>
+        <button class="tab" data-tab="anime3">Mushoku No Eiyuu</button>
+        <button class="tab" data-tab="about">About</button>
+    </nav>
+</header>
+
+<main>
+
+<section class="tab-content active" id="anime1">
+<h2>Claymore</h2>
+<div class="project-grid" id="anime1Projects"></div>
+</section>
+
+<section class="tab-content" id="anime2">
+<h2>Anime 2</h2>
+<div class="project-grid" id="anime2Projects"></div>
+</section>
+
+<section class="tab-content" id="anime3">
+<h2>Anime 3</h2>
+<div class="project-grid" id="anime3Projects"></div>
+</section>
+
+<section class="tab-content" id="about">
+<h2>About Me</h2>
+<p>
+Locker-Anime es un proyecto demostrativo diseñado con fines educativos, cuyo objetivo es mostrar de forma práctica cómo estructurar una plataforma web de contenido multimedia utilizando tecnologías base como HTML, CSS y JavaScript.
+</p>
+
+<p>
+Este ejemplo simula un contenedor de anime donde se integran múltiples fuentes de reproducción, como Google Drive, MEGA y Cloudinary, permitiendo comprender cómo trabajar con distintos servicios de almacenamiento.
+</p>
+
+<p>
+El proyecto está pensado como una guía para estudiantes y desarrolladores en formación, mostrando conceptos clave como:
+</p>
+
+<ul>
+<li>Organización de contenido dinámico mediante JavaScript</li>
+<li>Uso de interfaces por pestañas (Tabs)</li>
+<li>Integración de reproductores de video embebidos</li>
+<li>Manejo de eventos e interacción con el usuario</li>
+<li>Adaptabilidad del código para otros tipos de contenido</li>
+</ul>
+
+<p>
+Además, sirve como base escalable para proyectos más complejos, donde se puede implementar autenticación, bases de datos, servidores reales y sistemas de gestión de contenido.
+</p>
+
+<p>
+Locker-Anime no es solo un visor de anime, sino una plantilla de aprendizaje orientada a enseñar cómo construir plataformas modernas de distribución de contenido desde cero.
+</p>
+</section>
+
+<div class="about-banner">
+    <img src="anime/banner/1.png" alt="Locker-Anime Banner">
+</div>
+
+</main>
+
+<footer>
+<p>© 2026 Locker-Anime</p>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
