@@ -478,7 +478,13 @@ function openVideoPlayer(videoSrc){
 
     if(videoData.type === "video"){
         content = `
-        <video controls autoplay preload="metadata" width="100%">
+        <video id="videoPlayer"
+            controls
+            controlsList="nodownload noplaybackrate noremoteplayback"
+            disablePictureInPicture
+            autoplay
+            preload="metadata"
+            width="100%">
             <source src="${videoData.src}" type="video/mp4">
         </video>`;
     }
@@ -490,6 +496,13 @@ function openVideoPlayer(videoSrc){
 
     videoPlayer.innerHTML = content;
     document.body.appendChild(videoPlayer);
+
+    const video = document.getElementById("videoPlayer");
+
+    if(video){
+        // 🚫 Bloquear clic derecho
+        video.addEventListener("contextmenu", e => e.preventDefault());
+    }
 }
 
 document.addEventListener('click', function(event) {
